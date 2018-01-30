@@ -42,6 +42,6 @@ app.get("/campgrounds/new",function(req,res){
 });
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT,process.env.IP,function(){
   console.log("Yelp camp server started at port 3000");
 });
